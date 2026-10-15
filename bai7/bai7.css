@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 24px;
+  background-color: #f1f3f4;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.promotion {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 18px 28px;
+  background-color: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.promotion-header {
+  margin: 0 -18px;
+  text-align: center;
+}
+
+.promotion-header h1 {
+  margin: 0;
+  padding: 10px;
+  background-color: #c8102e;
+  color: #fff;
+  font-size: 22px;
+}
+
+.promotion-header p {
+  margin: 0;
+  padding: 2px 10px;
+  background-color: #fbe3e8;
+  color: #c8102e;
+  font-weight: bold;
+}
+
+.promotion-content {
+  padding-top: 20px;
+}
+
+.promotion-details {
+  min-height: 245px;
+  margin-left: 50%;
+  padding: 0 8px 12px 20px;
+  border-left: 2px solid #eee;
+}
+
+.promotion h2 {
+  margin: 0 0 4px;
+  color: #c8102e;
+  font-size: 16px;
+}
+
+.promotion h2::before {
+  content: "▫ ";
+}
+
+.promotion ul {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
+
+.product-image {
+  float: right;
+  width: 190px;
+  height: auto;
+  margin: 0 0 12px 16px;
+}
+
+.rewards {
+  max-width: 50%;
+  padding-top: 12px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .promotion-details {
+    min-height: 0;
+    margin-left: 0;
+    padding-left: 14px;
+  }
+
+  .rewards {
+    max-width: none;
+  }
+
+  .product-image {
+    width: 42%;
+  }
+}

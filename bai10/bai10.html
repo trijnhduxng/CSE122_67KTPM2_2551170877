@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 10 - Liên hệ</title>
+    <link rel="stylesheet" href="bai10.css" />
+  </head>
+  <body>
+    <main class="contact-card">
+      <header class="form-header">
+        <h1>Liên hệ với chúng tôi</h1>
+        <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
+      </header>
+
+      <form class="contact-form" action="#" method="get">
+        <div class="form-fields">
+          <div class="form-group">
+            <label for="name">Họ và tên</label>
+            <input id="name" name="name" type="text" value="Nguyễn Văn An" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" value="an.nv@tlu.edu.vn" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input id="phone" name="phone" type="tel" value="0987 654 321" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Chủ đề</label>
+            <select id="subject" name="subject">
+              <option value="course">Hỏi về khóa học</option>
+              <option value="consulting">Tư vấn</option>
+              <option value="other">Khác</option>
+            </select>
+          </div>
+
+          <div class="form-group message-group">
+            <label for="message">Nội dung</label>
+            <textarea id="message" name="message" rows="4">Em muốn hỏi về lịch nộp bài tập môn Lập trình Web ạ.</textarea>
+          </div>
+        </div>
+
+        <div class="form-bottom">
+          <label class="consent">
+            <input type="checkbox" name="reply-email" checked />
+            <span>Tôi đồng ý nhận email phản hồi.</span>
+          </label>
+
+          <div class="form-buttons">
+            <button class="submit-button" type="submit">Gửi liên hệ</button>
+            <button class="reset-button" type="reset">Nhập lại</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
