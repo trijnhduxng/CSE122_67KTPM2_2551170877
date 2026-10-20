@@ -1,0 +1,107 @@
+:root {
+  --nen: #f1f5f9;
+  --chu: #1e293b;
+  --the: #fff;
+  --vien: #dbe3ee;
+  --nhan: #2563eb;
+  --phu: #64748b;
+  --nut: #2563eb;
+  --chu-nut: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px 16px;
+  background: var(--nen);
+  color: var(--chu);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.toi {
+  --nen: #0f172a;
+  --chu: #e2e8f0;
+  --the: #1e293b;
+  --vien: #334155;
+  --nhan: #60a5fa;
+  --phu: #cbd5e1;
+  --nut: #60a5fa;
+}
+
+.page {
+  width: min(100%, 900px);
+  margin: 40px auto;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--phu);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+.page-header button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--nut);
+  color: var(--chu-nut);
+  font: inherit;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.info-card {
+  padding: 20px;
+  border: 1px solid var(--vien);
+  border-radius: 10px;
+  background: var(--the);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.info-card h2 {
+  margin: 0 0 10px;
+  color: var(--nhan);
+  font-size: 20px;
+}
+
+.info-card p {
+  margin: 0;
+  color: var(--phu);
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

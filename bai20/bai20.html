@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 20 - Hiệu ứng ảnh với CSS Filter</title>
+    <link rel="stylesheet" href="bai20.css" />
+    <script src="bai20.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-filters" aria-hidden="true">
+      <filter id="wave">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.025"
+          numOctaves="2"
+          result="noise"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+      </filter>
+    </svg>
+    <main class="page">
+      <h1>Hiệu ứng ảnh hoa</h1>
+      <section class="flower-card">
+        <img id="flower-image" src="../Anh/Bai20/hoahong.gif" alt="Bó hoa hồng" />
+        <p>Special For You</p>
+      </section>
+      <div class="effects" id="effects" aria-label="Chọn hiệu ứng">
+        <button data-effect="gray" type="button">Gray</button>
+        <button data-effect="xray" type="button">Xray</button>
+        <button data-effect="invert" type="button">Invert</button>
+        <button data-effect="flip-h" type="button">FlipH</button>
+        <button data-effect="flip-v" type="button">FlipV</button>
+        <button data-effect="glow" type="button">Glow</button>
+        <button data-effect="shadow" type="button">Shadow</button>
+        <button data-effect="bold-shadow" type="button">Bold Shadow</button>
+        <button data-effect="drop-shadow" type="button">DropShadow</button>
+        <button data-effect="blur" type="button">Blur</button>
+        <button data-effect="wave" type="button">Wave</button>
+        <button data-effect="mask" type="button">Mask</button>
+        <button data-effect="alpha" type="button">Alpha</button>
+      </div>
+    </main>
+  </body>
+</html>

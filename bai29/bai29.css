@@ -1,0 +1,7 @@
+.table {
+  min-width: 650px;
+}
+
+.table thead th {
+  white-space: nowrap;
+}

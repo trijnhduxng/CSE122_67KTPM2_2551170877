@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url("../Anh/Bai12/Nen.gif") repeat;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-card {
+  width: min(100%, 620px);
+  border-radius: 14px;
+}
+
+.calendar-display {
+  padding: 18px 12px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+}
+
+.calendar-year {
+  color: #c62828;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.calendar-month,
+.calendar-weekday {
+  color: #1565c0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.calendar-day {
+  color: #c62828;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.greeting {
+  color: #c62828;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.calendar-form {
+  border-color: #1565c0 !important;
+}
+
+.calendar-form .form-label {
+  display: block;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.calendar-form .btn {
+  min-height: 48px;
+  line-height: 1.2;
+}
+
+.error-message:empty {
+  display: none;
+}

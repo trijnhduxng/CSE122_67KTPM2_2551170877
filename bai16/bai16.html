@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 16 - Danh sách việc cần làm</title>
+    <link rel="stylesheet" href="bai16.css" />
+    <script src="bai16.js" defer></script>
+  </head>
+  <body>
+    <main class="todo-card">
+      <header class="todo-header">
+        <h1>Việc cần làm</h1>
+        <p>Ghi lại công việc của bạn hôm nay</p>
+      </header>
+      <form class="todo-form" id="todo-form">
+        <label class="visually-hidden" for="task-input">Công việc mới</label>
+        <input id="task-input" type="text" placeholder="Nhập công việc..." required />
+        <button type="submit">Thêm</button>
+      </form>
+      <ul class="task-list" id="task-list" aria-live="polite"></ul>
+      <p class="remaining" id="remaining">Còn 0 việc cần làm</p>
+    </main>
+  </body>
+</html>

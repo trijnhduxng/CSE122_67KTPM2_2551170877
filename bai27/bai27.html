@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 27 - Danh lam thắng cảnh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bai27.css" />
+  </head>
+  <body class="bg-light">
+    <main class="container py-5">
+      <header class="text-center mb-4">
+        <p class="text-danger fw-semibold mb-1">KHÁM PHÁ VIỆT NAM</p>
+        <h1 class="h2">Danh lam thắng cảnh</h1>
+      </header>
+      <section class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img class="card-img-top place-image" src="../Anh/Bai27/2-son-doong.jpg" alt="Hang Sơn Đoòng" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5">Hang Sơn Đoòng</h2>
+              <p class="card-text">Khám phá hang động rộng lớn với cảnh quan thiên nhiên độc đáo.</p>
+              <button class="btn btn-danger mt-auto align-self-start" type="button" data-bs-toggle="modal" data-bs-target="#sonDoongModal">Chi tiết</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img class="card-img-top place-image" src="../Anh/Bai27/5-mekong.jpg" alt="Đồng bằng sông Cửu Long" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5">Đồng bằng sông Cửu Long</h2>
+              <p class="card-text">Trải nghiệm chợ nổi, miệt vườn và cuộc sống miền sông nước.</p>
+              <button class="btn btn-danger mt-auto align-self-start" type="button" data-bs-toggle="modal" data-bs-target="#mekongModal">Chi tiết</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img class="card-img-top place-image" src="../Anh/Bai27/6-phong-nha.jpg" alt="Động Phong Nha" />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5">Động Phong Nha</h2>
+              <p class="card-text">Ngắm dòng sông ngầm và những khối thạch nhũ trong hang động.</p>
+              <button class="btn btn-danger mt-auto align-self-start" type="button" data-bs-toggle="modal" data-bs-target="#phongNhaModal">Chi tiết</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="mt-5">
+        <h2 class="h4 mb-3">Thông tin chuyến đi</h2>
+        <div class="accordion" id="travelAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#travelTips" aria-expanded="true" aria-controls="travelTips">
+                Kinh nghiệm du lịch
+              </button>
+            </h3>
+            <div id="travelTips" class="accordion-collapse collapse show" data-bs-parent="#travelAccordion">
+              <div class="accordion-body">Chuẩn bị trang phục phù hợp, kiểm tra thời tiết và giữ gìn vệ sinh tại điểm đến.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#travelCost" aria-expanded="false" aria-controls="travelCost">
+                Chi phí dự kiến
+              </button>
+            </h3>
+            <div id="travelCost" class="accordion-collapse collapse" data-bs-parent="#travelAccordion">
+              <div class="accordion-body">Chi phí tham khảo gồm di chuyển, lưu trú, ăn uống và vé tham quan; mức giá thay đổi theo lịch trình.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade" id="sonDoongModal" tabindex="-1" aria-labelledby="sonDoongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header"><h2 class="modal-title fs-5" id="sonDoongTitle">Hang Sơn Đoòng</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Đóng"></button></div>
+          <div class="modal-body">Một điểm đến nổi bật tại Quảng Bình, phù hợp với hành trình khám phá thiên nhiên.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Đóng</button><a class="btn btn-danger" href="#travelAccordion">Đặt ngay</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="mekongModal" tabindex="-1" aria-labelledby="mekongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header"><h2 class="modal-title fs-5" id="mekongTitle">Đồng bằng sông Cửu Long</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Đóng"></button></div>
+          <div class="modal-body">Hành trình miền Tây đưa bạn đến chợ nổi, vườn cây và những dòng kênh xanh.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Đóng</button><a class="btn btn-danger" href="#travelAccordion">Đặt ngay</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="phongNhaModal" tabindex="-1" aria-labelledby="phongNhaTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header"><h2 class="modal-title fs-5" id="phongNhaTitle">Động Phong Nha</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Đóng"></button></div>
+          <div class="modal-body">Tham quan động bằng thuyền và chiêm ngưỡng vẻ đẹp của hệ thống thạch nhũ.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Đóng</button><a class="btn btn-danger" href="#travelAccordion">Đặt ngay</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

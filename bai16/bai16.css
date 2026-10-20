@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px 16px;
+  background: #f5f3ff;
+  color: #312e3b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-card {
+  width: min(100%, 600px);
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(76 29 149 / 14%);
+}
+
+.todo-header {
+  padding: 20px 24px;
+  background: #6d28d9;
+  color: #fff;
+}
+
+.todo-header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.todo-header p {
+  margin: 0;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  padding: 20px 24px 8px;
+}
+
+.todo-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 11px 12px;
+  border: 1px solid #c4b5fd;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.todo-form button {
+  padding: 0 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #6d28d9;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.task-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px dashed #ede9fe;
+  border-radius: 6px;
+}
+
+.task-label {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.task-label input {
+  accent-color: #6d28d9;
+}
+
+.task-item.completed .task-text {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.delete-button {
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: #fde2e2;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.remaining {
+  margin: 16px 24px 22px;
+  color: #6d28d9;
+  font-weight: bold;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 420px) {
+  .todo-form,
+  .todo-header {
+    padding-inline: 16px;
+  }
+
+  .task-list {
+    margin-inline: 16px;
+  }
+}

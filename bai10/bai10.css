@@ -19,23 +19,19 @@ body {
   background-color: #fff;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
 }
-
 .form-header {
   padding: 20px 28px;
   background-color: #0f766e;
   color: #fff;
 }
-
 .form-header h1 {
   margin: 0 0 4px;
   font-size: 23px;
 }
-
 .form-header p {
   margin: 0;
-  color: #d5f1ee;
+  color: white;
 }
-
 .contact-form {
   padding: 22px 28px 26px;
 }
@@ -45,14 +41,12 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px 20px;
 }
-
 .form-group label {
   display: block;
   margin-bottom: 6px;
   font-size: 13px;
   font-weight: bold;
 }
-
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -64,15 +58,12 @@ body {
   color: #333;
   font: inherit;
 }
-
 .form-group textarea {
   resize: vertical;
 }
-
 .message-group {
   grid-column: 1 / -1;
 }
-
 .form-bottom {
   display: flex;
   margin-top: 18px;
@@ -80,7 +71,6 @@ body {
   justify-content: space-between;
   gap: 16px;
 }
-
 .consent {
   display: flex;
   align-items: flex-start;
@@ -88,17 +78,14 @@ body {
   max-width: 220px;
   line-height: 1.4;
 }
-
 .consent input {
   margin-top: 3px;
   accent-color: #0f766e;
 }
-
 .form-buttons {
   display: flex;
   gap: 10px;
 }
-
 .form-buttons button {
   padding: 10px 18px;
   border: 0;
@@ -106,7 +93,6 @@ body {
   font: inherit;
   cursor: pointer;
 }
-
 .submit-button {
   background-color: #0f766e;
   color: #fff;
@@ -119,29 +105,4 @@ body {
 
 .form-buttons button:hover {
   opacity: 0.88;
-}
-
-@media (max-width: 560px) {
-  body {
-    padding: 24px 12px;
-  }
-
-  .form-header,
-  .contact-form {
-    padding-right: 18px;
-    padding-left: 18px;
-  }
-
-  .form-fields {
-    grid-template-columns: 1fr;
-  }
-
-  .message-group {
-    grid-column: auto;
-  }
-
-  .form-bottom {
-    align-items: flex-start;
-    flex-direction: column;
-  }
 }

@@ -1,0 +1,12 @@
+body {
+  background: #f8f9fa;
+}
+
+.hero {
+  background: #eaf2ff;
+}
+
+.destination-image {
+  height: 220px;
+  object-fit: cover;
+}

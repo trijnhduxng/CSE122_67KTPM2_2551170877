@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px 16px;
+  place-items: center;
+  background: #fff7ed;
+  color: #334155;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-card {
+  width: min(100%, 480px);
+  padding: 28px;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(124 45 18 / 10%);
+}
+
+.register-card h1 {
+  margin: 0 0 22px;
+  color: #c2410c;
+  font-size: 25px;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.field input.valid {
+  border: 2px solid #16a34a;
+}
+
+.field input.invalid {
+  border: 2px solid #dc2626;
+}
+
+.error {
+  display: block;
+  min-height: 18px;
+  margin-top: 4px;
+  color: #dc2626;
+}
+
+.error.is-success {
+  color: #16a34a;
+}
+
+.register-card button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #c2410c;
+  color: #fff;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.success {
+  margin: 14px 0 0;
+  color: #16a34a;
+  text-align: center;
+}

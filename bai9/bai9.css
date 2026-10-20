@@ -22,14 +22,12 @@ body {
   background-color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
 }
-
 .profile-sidebar {
   padding: 26px 24px;
   background: linear-gradient(135deg, #1565c0, #0d3f7a);
-  color: #fff;
+  color: white;
   text-align: center;
 }
-
 .avatar {
   display: flex;
   width: 100px;
@@ -38,31 +36,27 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: white;
   color: #1565c0;
   font-size: 30px;
   font-weight: bold;
 }
-
 .profile-sidebar h1 {
   margin: 0;
   font-size: 20px;
 }
-
 .role {
-  margin: 4px 0 14px;
+  margin: 0;
   font-size: 12px;
 }
-
 .contact-list {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   list-style: none;
   text-align: left;
   font-size: 12px;
   line-height: 2;
 }
-
 .contact-list li::before {
   content: "▪ ";
 }
@@ -77,18 +71,10 @@ body {
 }
 
 .profile-content section {
-  margin-bottom: 14px;
+  margin-botton: 14px;
 }
 
 .profile-content h2 {
-  margin: 0 0 6px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #e3edf8;
-  color: #1565c0;
-  font-size: 16px;
-}
-
-.profile-content p {
   margin: 0;
   line-height: 1.5;
 }
@@ -109,21 +95,6 @@ body {
   color: #0d3f7a;
   font-size: 12px;
 }
-
 .social-links a {
   color: #1565c0;
-}
-
-@media (max-width: 620px) {
-  body {
-    padding: 24px 12px;
-  }
-
-  .profile-card {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-content {
-    padding: 22px;
-  }
 }

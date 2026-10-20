@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #101619;
+  color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.page h1 {
+  margin: 0 0 20px;
+}
+
+.flower-card {
+  display: grid;
+  min-height: 320px;
+  padding: 18px;
+  place-items: center;
+  border-radius: 12px;
+  background: #1c2226;
+}
+
+.flower-card img {
+  display: block;
+  max-width: 100%;
+  max-height: 270px;
+  object-fit: contain;
+  transition: filter 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+
+.flower-card p {
+  margin: 8px 0 0;
+  background: linear-gradient(90deg, #facc15, #fef3c7, #d4a017);
+  background-clip: text;
+  color: transparent;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.effects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.effects button {
+  padding: 9px 12px;
+  border: 1px solid #39454c;
+  border-radius: 6px;
+  background: #232b30;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.effects button.active {
+  border-color: #0d6efd;
+  background: #0d6efd;
+}
+
+.svg-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+#flower-image.gray {
+  filter: grayscale(1);
+}
+
+#flower-image.xray {
+  filter: grayscale(1) invert(1);
+}
+
+#flower-image.invert {
+  filter: invert(1);
+}
+
+#flower-image.flip-h {
+  transform: scaleX(-1);
+}
+
+#flower-image.flip-v {
+  transform: scaleY(-1);
+}
+
+#flower-image.glow {
+  filter: drop-shadow(0 0 18px #ff6b9d);
+}
+
+#flower-image.shadow {
+  filter: drop-shadow(7px 7px 5px rgb(0 0 0 / 75%));
+}
+
+#flower-image.bold-shadow {
+  filter: drop-shadow(0 0 6px #fff) drop-shadow(0 0 14px #f43f5e);
+}
+
+#flower-image.drop-shadow {
+  filter: drop-shadow(5px 8px 4px #030712);
+}
+
+#flower-image.blur {
+  filter: blur(3px);
+}
+
+#flower-image.wave {
+  filter: url("#wave");
+}
+
+#flower-image.mask {
+  clip-path: circle(42% at center);
+}
+
+#flower-image.alpha {
+  opacity: 0.4;
+}
